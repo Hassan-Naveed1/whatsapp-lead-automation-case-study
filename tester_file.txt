@@ -1,0 +1,12 @@
+# health
+curl http://127.0.0.1:5000/health
+
+# create a lead
+curl -X POST -H "Content-Type: application/json" \
+  -d '{"full_name":"Ayesha Khan","phone":"+447700900123","email":"ayesha@example.com"}' \
+  http://127.0.0.1:5000/api/wix-form
+
+# inspect the outbox
+curl http://127.0.0.1:5000/outbox
+
+# OFCOURSE WHEN I TEST LOCALLY I REPLACE THE ABOVE DATA WITH REAL TO TEST IT LOCALLY, IF THE ABOVE ISNT CHANGED IT WILL NOT WORK!! 
